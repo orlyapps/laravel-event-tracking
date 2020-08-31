@@ -12,7 +12,12 @@ You can install the package via composer:
 
 ```bash
 composer require orlyapps/laravel-event-tracking
+php artisan vendor:publish --provider="Orlyapps\LaravelEventTracking\LaravelEventTrackingServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Orlyapps\LaravelEventTracking\LaravelEventTrackingServiceProvider" --tag="migration"
 
+```
+
+```php
 // User.php
 class User extends Authenticatable
 {
@@ -34,7 +39,8 @@ fetch("http://laravel.test/api/events", {
     headers: {
         accept: "application/json, text/plain, */*",
         "accept-language": "de",
-        authorization: "Bearer 9|mrHe15eBQkGejPtXXbZ8VB4yVczhFD8fDHmObjQgskEk7f5G1dW1LbqIBQ2MjZWP6xhhniHRpxhNaZm0",
+        authorization:
+            "Bearer 9|mrHe15eBQkGejPtXXbZ8VB4yVczhFD8fDHmObjQgskEk7f5G1dW1LbqIBQ2MjZWP6xhhniHRpxhNaZm0",
         "content-type": "application/json",
     },
     body: '{"name":"first_login","my-meta-key":{"code":"my meta value"}}',
