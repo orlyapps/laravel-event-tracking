@@ -13,7 +13,7 @@ You can install the package via composer:
 ```bash
 composer require orlyapps/laravel-event-tracking
 php artisan vendor:publish --provider="Orlyapps\LaravelEventTracking\LaravelEventTrackingServiceProvider" --tag="config"
-php artisan vendor:publish --provider="Orlyapps\LaravelEventTracking\LaravelEventTrackingServiceProvider" --tag="migration"
+php artisan vendor:publish --provider="Orlyapps\LaravelEventTracking\LaravelEventTrackingServiceProvider" --tag="migrations"
 
 ```
 
