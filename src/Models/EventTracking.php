@@ -1,6 +1,6 @@
 <?php
 
-namespace Orlyapps\LaravelEventTracking\Model;
+namespace Orlyapps\LaravelEventTracking\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
