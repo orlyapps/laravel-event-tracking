@@ -2,7 +2,7 @@
 
 namespace Orlyapps\LaravelEventTracking\Traits;
 
-use Orlyapps\LaravelEventTracking\Model\EventTracking;
+use Orlyapps\LaravelEventTracking\Models\EventTracking;
 
 /**
  *
