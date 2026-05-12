@@ -4,5 +4,6 @@
  * You can place your custom package configuration in here.
  */
 return [
-    'middleware' => ['auth:sanctum']
+    'middleware' => ['auth:sanctum'],
+    'user_model' => \App\Models\User::class,
 ];

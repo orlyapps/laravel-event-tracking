@@ -18,6 +18,6 @@ class EventTracking extends Model
 
     public function user()
     {
-        return $this->belongsTo(\App\User::class);
+        return $this->belongsTo(config('laravel-event-tracking.user_model', \App\Models\User::class));
     }
 }

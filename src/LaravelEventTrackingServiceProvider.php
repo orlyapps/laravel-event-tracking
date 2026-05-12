@@ -21,7 +21,7 @@ class LaravelEventTrackingServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('event-tracking.php'),
+                __DIR__ . '/../config/config.php' => config_path('laravel-event-tracking.php'),
             ], 'config');
 
             // Publishing the views.
